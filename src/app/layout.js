@@ -4,7 +4,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import NavigationBar from "@/resources/form/components/NavigationBar";
 
 export const metadata = {
-  title: "CAU - Socios",
+  title: "CAU - M1",
   description: "Plataforma web Club Andino Universitario",
   icons: {
     icon: "/favicon.png",
