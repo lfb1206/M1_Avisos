@@ -102,7 +102,7 @@ export default function Step7FinalReview() {
         if (!participant.rut) errors.push(`RUT del participante "${participant.nombre || `#${index + 1}`}"`);
         if (!participant.telefono) errors.push(`Teléfono del participante "${participant.nombre || `#${index + 1}`}"`);
         if (!participant.contactoEmergencia) errors.push(`Contacto de emergencia del participante "${participant.nombre || `#${index + 1}`}"`);
-        if (!participant.telefonoEmergencia) errors.push(`Teléfono de emergencia del participante "${participant.nombre || `#${index + 1}`}"`);
+        if (!participant.telefonoEmergencia) errors.push(`Teléfono de contacto de emergencia del participante "${participant.nombre || `#${index + 1}`}"`);
       });
     }
     

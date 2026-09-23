@@ -337,7 +337,7 @@ export default function Step4RiskManagement() {
                               onChange={e => updateCausa(sup.key, causaIndex, 'accionExposicion', e.target.value)}
                               rows={2}
                               className="w-full px-2 py-1 border border-gray-300 rounded"
-                              placeholder="¿Qué acciones reducen la exposición al peligro?"
+                              placeholder="¿Cómo disminuyo el impacto si el supuesto no se cumple?"
                             />
                           </div>
                         </div>

@@ -169,7 +169,26 @@ export const FormContextProvider = ({ children }) => {
         weatherImages: formData.basicInfo.weatherImages || [] // Save compressed images
       }
     };
-    localStorage.setItem('formData', JSON.stringify(dataToSave));
+
+    try {
+      localStorage.setItem('formData', JSON.stringify(dataToSave));
+    } catch (error) {
+      console.error('Error saving form data to localStorage:', error);
+
+      // localStorage has a per-origin size limit (~5-10MB). Large weather image
+      // uploads can push the payload over that limit and throw QuotaExceededError.
+      // Fall back to persisting everything except the images so the app doesn't
+      // crash and the rest of the form data isn't lost.
+      try {
+        const { weatherImages, ...basicInfoWithoutImages } = dataToSave.basicInfo;
+        localStorage.setItem('formData', JSON.stringify({
+          ...dataToSave,
+          basicInfo: basicInfoWithoutImages
+        }));
+      } catch (fallbackError) {
+        console.error('Error saving form data to localStorage (fallback without images):', fallbackError);
+      }
+    }
   }, [formData, isInitialized]);
 
   // Context functions

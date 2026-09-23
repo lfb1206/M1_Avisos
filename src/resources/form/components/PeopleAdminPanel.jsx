@@ -295,7 +295,7 @@ function PersonForm({ person, onSave, onCancel, isNew = false }) {
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700">Teléfono de Emergencia</label>
+              <label className="block text-sm font-medium text-gray-700">Teléfono de Contacto de Emergencia</label>
               <input
                 type="text"
                 value={formData.data.telefonoEmergencia || ''}

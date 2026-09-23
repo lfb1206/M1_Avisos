@@ -98,7 +98,7 @@ const docFields = [
       { name: 'rut', label: 'RUT', placeholder: 'RUT del participante', type: 'text', required: true },
       { name: 'telefono', label: 'Teléfono', placeholder: '+569xxxxxxxx', type: 'tel', required: true },
       { name: 'contactoEmergencia', label: 'Contacto de Emergencia', placeholder: 'Nombre del contacto de emergencia', type: 'text', required: true },
-      { name: 'telefonoEmergencia', label: 'Teléfono de Emergencia', placeholder: '+569xxxxxxxx', type: 'tel', required: true },
+      { name: 'telefonoEmergencia', label: 'Teléfono de Contacto de Emergencia', placeholder: '+569xxxxxxxx', type: 'tel', required: true },
       { name: 'grupoSanguineo', label: 'Grupo sanguíneo', placeholder: 'Seleccione grupo sanguíneo', type: 'select', required: false },
       { name: 'alergias', label: 'Alergias', placeholder: 'Seleccione o escriba las alergias', type: 'text', required: false },
       { name: 'enfermedades', label: 'Enfermedades o condiciones', placeholder: 'Seleccione o escriba las condiciones', type: 'text', required: false },

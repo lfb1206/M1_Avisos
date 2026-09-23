@@ -101,13 +101,13 @@ export default function ParticipantForm({
 
       <div className="space-y-1">
         <label className="block text-sm font-medium text-gray-700">
-          Teléfono de emergencia *
+          Teléfono de contacto de emergencia *
         </label>
         <input
           type="tel"
           value={participant.telefonoEmergencia || ''}
           onChange={(e) => onUpdate(index, 'telefonoEmergencia', e.target.value)}
-          placeholder="Teléfono de emergencia *"
+          placeholder="Teléfono de contacto de emergencia *"
           className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
           required
         />
