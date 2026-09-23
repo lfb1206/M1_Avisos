@@ -78,30 +78,6 @@ export const basicFormOptions = {
     'Sector Valle Nevado',
     'Sector Lagunillas',
     'Sector Portillo'
-  ],
-
-  // Tramos de ruta
-  tramos: [
-    'Aproximación al cerro',
-    'Ascenso por sendero',
-    'Descenso por ladera',
-    'Travesía por cresta',
-    'Cruce de río',
-    'Ascenso por canaleta',
-    'Descenso por canaleta',
-    'Travesía por glaciar',
-    'Cruce de quebrada',
-    'Ascenso por arista',
-    'Descenso por arista',
-    'Travesía por valle',
-    'Cruce de puente',
-    'Ascenso por chimenea',
-    'Descenso por chimenea',
-    'Travesía por meseta',
-    'Cruce de vado',
-    'Ascenso por pared',
-    'Descenso por pared',
-    'Travesía por bosque'
   ]
 };
 

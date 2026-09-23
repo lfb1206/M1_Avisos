@@ -301,25 +301,6 @@ export default function FormsAdminPanel() {
           </div>
         </div>
 
-        <div className="bg-white p-4 rounded-lg border shadow-sm">
-          <h4 className="font-semibold text-gray-900 mb-3">Sugerencias de Tramos de Ruta</h4>
-          <div className="space-y-2">
-            {basicOptions.tramos.map((tramo, index) => (
-              <div key={index} className="flex justify-between items-center p-2 bg-gray-50 rounded">
-                <span className="text-sm">{tramo}</span>
-                <div className="flex items-center space-x-2">
-                  <span className="text-xs text-gray-500">Sugerencia</span>
-                  <button
-                    onClick={() => handleDeleteBasicItem('tramos', index)}
-                    className="text-red-600 hover:text-red-800 text-xs"
-                  >
-                    Eliminar
-                  </button>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
     </div>
   );
@@ -665,7 +646,6 @@ export default function FormsAdminPanel() {
                   <option value="actividades">Actividades Generales</option>
                   <option value="actividadesEspecificas">Actividades Específicas</option>
                   <option value="cerrosSectores">Cerros y Sectores</option>
-                  <option value="tramos">Tramos de Ruta</option>
                 </select>
               </div>
               <div>

@@ -68,8 +68,7 @@ export default function ItineraryDayForm({
             label="Tramo"
             value={day.tramo || ''}
             onChange={(value) => onUpdate(dayIndex, 'tramo', value)}
-            options={basicFormOptions.tramos}
-            placeholder="Seleccione o escriba el tramo"
+            placeholder="Escriba el nombre del tramo"
             required
           />
           <div className="space-y-1">

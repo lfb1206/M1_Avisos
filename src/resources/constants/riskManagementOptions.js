@@ -27,7 +27,27 @@ export const riskManagementOptions = {
     'Problemas de equipamiento',
     'Problemas de salud',
     'Problemas de transporte',
-    'Problemas de logística'
+    'Problemas de logística',
+    'Aproximación al cerro',
+    'Ascenso por sendero',
+    'Descenso por ladera',
+    'Travesía por cresta',
+    'Cruce de río',
+    'Ascenso por canaleta',
+    'Descenso por canaleta',
+    'Travesía por glaciar',
+    'Cruce de quebrada',
+    'Ascenso por arista',
+    'Descenso por arista',
+    'Travesía por valle',
+    'Cruce de puente',
+    'Ascenso por chimenea',
+    'Descenso por chimenea',
+    'Travesía por meseta',
+    'Cruce de vado',
+    'Ascenso por pared',
+    'Descenso por pared',
+    'Travesía por bosque'
   ],
 
   // Supuestos clave
