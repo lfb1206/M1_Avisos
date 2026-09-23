@@ -23,10 +23,12 @@ export default function AutocompleteInput({
 
   // Filter options based on input
   useEffect(() => {
+    const sortedOptions = [...options].sort((a, b) => a.localeCompare(b, 'es', { sensitivity: 'base' }));
+
     if (inputValue === '') {
-      setFilteredOptions(options);
+      setFilteredOptions(sortedOptions);
     } else {
-      const filtered = options.filter(option => 
+      const filtered = sortedOptions.filter(option =>
         option.toLowerCase().includes(inputValue.toLowerCase())
       );
       setFilteredOptions(filtered);
