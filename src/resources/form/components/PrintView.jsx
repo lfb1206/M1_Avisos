@@ -528,7 +528,9 @@ export default function PrintView({ formData, onClose }) {
 
   const formatItineraryDate = (dateString) => {
     if (!dateString) return '';
-    return new Date(dateString).toLocaleDateString('es-CL', {
+    // dateString is a date-only value (YYYY-MM-DD); parsing it directly would
+    // be interpreted as UTC midnight and can roll back a day in local time.
+    return new Date(dateString + 'T00:00:00').toLocaleDateString('es-CL', {
       day: '2-digit',
       month: '2-digit'
     });
@@ -943,7 +945,7 @@ export default function PrintView({ formData, onClose }) {
                         {image.name && <p style={{ margin: '0 0 2px 0' }}>{image.name}</p>}
                         {image.fechaObtencion && (
                           <p style={{ margin: '0', fontWeight: 'bold' }}>
-                            Fecha: {new Date(image.fechaObtencion).toLocaleDateString('es-CL', { month: '2-digit', day: '2-digit' })}
+                            Fecha: {new Date(image.fechaObtencion + 'T00:00:00').toLocaleDateString('es-CL', { month: '2-digit', day: '2-digit' })}
                           </p>
                         )}
                       </div>

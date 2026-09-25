@@ -261,7 +261,7 @@ export default function Step7FinalReview() {
                 <div className="text-xs text-gray-500 mt-1">
                   {formData.basicInfo.weatherImages.map((img, idx) => (
                     <div key={idx}>
-                      {img.name} {img.fechaObtencion && `(${new Date(img.fechaObtencion).toLocaleDateString('es-CL')})`}
+                      {img.name} {img.fechaObtencion && `(${new Date(img.fechaObtencion + 'T00:00:00').toLocaleDateString('es-CL')})`}
                     </div>
                   ))}
                 </div>
